@@ -41,9 +41,10 @@ th {
 }
 
 .star-rating {
-	background: url("https://cdn2.iconfinder.com/data/icons/freecns-cumulus/16/519682-189_FormStar-16.png") no-repeat center/cover;
-	padding: 5px;
-	margin: 10px;
+	background: url("https://cdn2.iconfinder.com/data/icons/freecns-cumulus/16/519682-189_FormStar-16.png") no-repeat center;
+	padding: 10px;
+    margin: 0px;
+    display: inline-block;
 }
 
 .rating__o-wrapper li {
