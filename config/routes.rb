@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :ratings
   get 'pages/info'
 
   resources :ideas

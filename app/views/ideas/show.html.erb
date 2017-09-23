@@ -14,6 +14,21 @@
   <strong>Picture:</strong>
   <%= image_tag(@idea.picture_url, width: 600) if @idea.picture.present? %>
 </p>
+<p>
+<div class="rating__o-wrapper">
+	<% if @idea.ratings.any? %>
+	<strong>Average Rating:</strong>
+	<ul>
+		<li> 
+			<% @idea.average_rating.times do | i | %>
+			<span class="star-rating"></span>
+			<% end %>
+		</li>
+	</ul>
+	<% end %>
+	<%= link_to 'Add rating', new_rating_path(idea_id: @idea.id)%>
+</p>
+</div>
 
 <%= link_to 'Edit', edit_idea_path(@idea) %> |
 <%= link_to 'Back', ideas_path %>

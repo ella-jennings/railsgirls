@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
  :root {
     --grey: rgba(0,0,0,0.1);
 }
@@ -28,14 +29,24 @@ table, td, th {
 	vertical-align: middle; 
 	border: none; 
 	padding: 5px;
-	position: center;
 }
 th { 
 	border-bottom: 1px solid #DDD; 
 }
 
-.table {
-	background-color: var(--grey);
+.coloured-box {
+	background: var(--grey);
 	position: center;
-
+	min-height: 50px;
 }
+
+.star-rating {
+	background: url("https://cdn2.iconfinder.com/data/icons/freecns-cumulus/16/519682-189_FormStar-16.png") no-repeat center/cover;
+	padding: 5px;
+	margin: 10px;
+}
+
+.rating__o-wrapper li {
+	list-style-type: none;
+}
+
